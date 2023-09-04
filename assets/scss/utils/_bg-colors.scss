@@ -1,4 +1,8 @@
 // bg-colors
+.bg-gradient-x {
+  @include bg-gradient-x($primary-100, $primary-200);
+}
+
 .bg-gradient-y {
   @include bg-gradient-y($primary-100, $primary-200);
 }
