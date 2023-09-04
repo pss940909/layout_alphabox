@@ -1,0 +1,18 @@
+// custom colors
+$primary-100: #7000ff !default; // custom
+$primary-200: #11002d !default; // custom
+$primary-300: #6e01f8 !default; // custom
+$primary-400: #380c7e !default; // custom
+$primary-500: #1f0f39 !default; // custom
+
+// custom-primary-colors
+$primary-colors: (
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+  "primary-500": $primary-500,
+) !default;
+
+// 合併到色彩設定
+$theme-colors: map-merge($theme-colors, $primary-colors);

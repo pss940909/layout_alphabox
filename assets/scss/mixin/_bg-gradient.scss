@@ -1,0 +1,21 @@
+// 水平漸層
+
+@mixin bg-gradient-x($start-color: $primary-100, $end-color: $primary-200) {
+  background-image: linear-gradient(to right, $start-color, $end-color);
+}
+
+// 垂直漸層
+
+@mixin bg-gradient-y($start-color: $primary-100, $end-color: $primary-200) {
+  background-image: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+// 放射狀漸層
+
+@mixin radial-gradient($start-color: #28085c, $end-color: #000000) {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    $start-color 0%,
+    $end-color 100%
+  );
+}

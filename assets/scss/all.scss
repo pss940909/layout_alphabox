@@ -1,11 +1,26 @@
+// google fonts
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Shrikhand&display=swap");
+
+// bootstrap變數設定
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
 
+// utils
+@import "./utils/variables";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// mixin
+@import "./mixin/bg-gradient";
 
+// utils
+@import "./utils/custom-colors";
+@import "./utils/base";
+@import "./utils/bg-colors";
 
-@import './pages/index.scss';
+// layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
+// pages
+@import "./pages/index.scss";
+
+// bootstrap 全部
 @import "../../node_modules/bootstrap";
